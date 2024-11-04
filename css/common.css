@@ -1,14 +1,33 @@
 @charset "utf-8";
-
 body {
   display: flex;
   justify-content: center;
   font-size: 1.6rem;
   font-family: "Pretendard", sans-serif;
+  line-height: 1.5;
 }
 
 #wrap {
+  position: relative;
   min-width: 375px;
   width: 375px;
   height: 100vh;
+}
+.btn_wrap {
+  position: absolute;
+  width: 100%;
+  padding: 40px 0 20px;
+  background: var(--run-main-white);
+  z-index: 2;
+}
+.btn {
+  position: absolute;
+  width: calc(100% - 32px);
+  height: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--run-main-green);
+  color: var(--run-main-white);
+  border-radius: 10px;
+  font-size: 1.6rem;
 }

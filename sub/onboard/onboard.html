@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>STRIKE</title>
     <!-- FONT -->
-    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="../../css/font.css" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="../../css/reset.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
   </head>
   <body>
     <div id="wrap">
@@ -22,18 +22,64 @@
       <div class="swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="../../img/main/onboard1.png" alt="onboard1" />
+            <div class="onboard-txt">
+              <h2>나에게 필요한 맞춤 코스</h2>
+              <p>
+                현재 내 위치에서 가까운 러닝코스들을<br />
+                다양하게 추천받아요!
+              </p>
+              <div class="onboard-img">
+                <img
+                  src="../../img/main/onboard1.svg"
+                  class="onboard-img1"
+                  alt=""
+                />
+              </div>
+            </div>
           </div>
-          <div class="swiper-slide"></div>
-          <div class="swiper-slide"></div>
+          <div class="swiper-slide">
+            <div class="onboard-txt">
+              <h2>함께 달리는 즐거움</h2>
+              <p>
+                마음에 드는 러닝크루에 가입하여<br />
+                언제든지 뛰어요!
+              </p>
+            </div>
+            <div class="onboard-img">
+              <img
+                src="../../img/main/onboard2.svg"
+                class="onboard-img2"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="onboard-txt">
+              <h2>끊임없는 도전정신</h2>
+              <p>
+                스트라이크에서 제공하는 다양한 챌린지로<br />
+                매일매일 운동해요!
+              </p>
+            </div>
+            <div class="onboard-img">
+              <img
+                src="../../img/main/onboard3.svg"
+                class="onboard-img3"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="btn_wrap">
+        <button class="btn">시작하기</button>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       let swiper = new Swiper(".swiper", {
         centeredSlides: true,
-        slidesPerView: 3,
+        slidesPerView: 1,
         pagination: {
           el: ".onboard-pagination",
         },
