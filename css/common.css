@@ -12,6 +12,8 @@ body {
   min-width: 375px;
   width: 375px;
   height: 100vh;
+  border: 1px solid #000;
+  overflow: hidden;
 }
 .btn_wrap {
   position: absolute;
@@ -21,13 +23,48 @@ body {
   z-index: 2;
 }
 .btn {
-  position: absolute;
-  width: calc(100% - 32px);
+  width: 100%;
   height: 50px;
-  left: 50%;
-  transform: translateX(-50%);
   background: var(--run-main-green);
   color: var(--run-main-white);
   border-radius: 10px;
   font-size: 1.6rem;
+}
+.btn.under {
+  position: absolute;
+  left: 50%;
+  bottom: 54px;
+  transform: translateX(-50%);
+  width: calc(100% - 32px);
+}
+#header {
+  position: sticky;
+  background: var(--run-main-white) center;
+}
+#header .navigator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23px 16px;
+}
+#header a {
+  display: block;
+}
+#header .title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#header .title h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #222;
+}
+#header.h-shadow {
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+#main {
+  position: relative;
+  padding: 0 16px;
 }

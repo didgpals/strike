@@ -22,4 +22,10 @@ img {
 }
 button {
   cursor: pointer;
+  border: 0;
+}
+legend,
+fieldset {
+  border: 0;
+  font-size: 0;
 }

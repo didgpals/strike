@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STRIKE</title>
+    <!-- FONT -->
+    <link rel="stylesheet" href="../../css/font.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <ul class="navigator">
+          <li>
+            <a href="../onboard/onboard.html"
+              ><img src="../../img/common/back.svg" alt="back"
+            /></a>
+          </li>
+          <li class="title"></li>
+          <li class="util"></li>
+        </ul>
+      </header>
+      <main id="main">
+        <div class="login-logo">
+          <img
+            src="../../img/common/logo-g.svg"
+            alt="strike"
+            class="login-logo"
+          />
+        </div>
+
+        <form class="login">
+          <fieldset>
+            <legend>ID/Password</legend>
+            <input
+              type="text"
+              name="loginId"
+              placeholder="아이디(이메일)"
+              class="login-id"
+            />
+            <input
+              type="password"
+              name="loginPw"
+              placeholder="비밀번호"
+              class="login-pw"
+            />
+            <button type="button" class="btn btn-login">로그인</button>
+          </fieldset>
+          <fieldset class="pw-join">
+            <a href="#">비밀번호 찾기</a>
+            <p>|</p>
+            <a href="../join/join.html">회원가입</a>
+          </fieldset>
+          <fieldset class="sns-login">
+            <ul class="line-box">
+              <li><hr /></li>
+              <li><p>또는</p></li>
+              <li><hr /></li>
+            </ul>
+            <ul class="sns">
+              <li>
+                <a href="#"
+                  ><img src="../../img/main/kakao.svg" alt="kakao"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="../../img/main/google.svg" alt="google"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="../../img/main/apple.svg" alt="apple"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="../../img/main/naver.svg" alt="naver"
+                /></a>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </main>
+    </div>
+  </body>
+  <script src="../../js/jquery-3.7.1.min.js"></script>
+  <script src="../../js/login.js"></script>
+</html>
