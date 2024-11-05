@@ -10,17 +10,10 @@ body {
 #wrap {
   position: relative;
   min-width: 375px;
-  width: 375px;
+  max-width: 375px;
   height: 100vh;
   border: 1px solid #000;
   overflow: hidden;
-}
-.btn_wrap {
-  position: absolute;
-  width: 100%;
-  padding: 40px 0 20px;
-  background: var(--run-main-white);
-  z-index: 2;
 }
 .btn {
   width: 100%;
@@ -41,7 +34,7 @@ body {
   position: sticky;
   background: var(--run-main-white) center;
 }
-#header .navigator {
+#header .status {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -67,4 +60,38 @@ body {
 #main {
   position: relative;
   padding: 0 16px;
+  overflow-y: scroll;
+  margin-bottom: 102px;
+}
+#main::-webkit-scrollbar {
+  display: none;
+}
+input:not(input[type="checkbox"], input[type="radio"]) {
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 16px 12px;
+  border: 1px solid var(--run-main-lightgray);
+  border-radius: 10px;
+  outline: none;
+}
+input::placeholder {
+  color: var(--run-main-lightgray);
+}
+
+#footer {
+  position: fixed;
+  bottom: 32px;
+  max-width: 375px;
+  height: 70px;
+  width: 100%;
+  box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.1);
+}
+#footer .navbar {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+#footer .navbar li {
+  padding: 23px 0;
 }

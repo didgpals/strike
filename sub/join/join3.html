@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STRIKE</title>
+    <!-- FONT -->
+    <link rel="stylesheet" href="../../css/font.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <header id="header" class="h-shadow">
+        <ul class="status">
+          <li>
+            <a href="join2.html"
+              ><img src="../../img/common/back.svg" alt="back"
+            /></a>
+          </li>
+          <li class="title"><h2>회원가입</h2></li>
+          <li class="util"></li>
+        </ul>
+      </header>
+      <main id="main" class="join">
+        <h3>
+          간단한 정보를 <br />
+          알려주세요.
+        </h3>
+        <form class="join-form">
+          <fieldset>
+            <input type="text" placeholder="닉네임을 입력해주세요." />
+            <input type="text" placeholder="우리 동네 찾기" class="location" />
+          </fieldset>
+        </form>
+      </main>
+      <div class="dimmd">
+        <div class="pop-up">
+          <div class="pop-up-top-txt">
+            <h3>우리 동네 찾기</h3>
+            <img
+              src="../../img/common/close.svg"
+              alt="close"
+              class="btn-close"
+            />
+          </div>
+          <form class="pop-up-search">
+            <fieldset>
+              <input
+                type="text"
+                placeholder="우리 동네 이름(동,읍,면)으로 검색"
+                class="pop-up-search-mgt"
+              />
+              <button type="button" class="btn">현재 위치로 찾기</button>
+            </fieldset>
+            <fieldset>
+              <h4>주변동네</h4>
+              <ul>
+                <li>부산 동래구 온천제1동</li>
+                <li>부산 동래구 온천동</li>
+                <li>부산 동래구 명륜동</li>
+                <li>부산 동래구 온천제2동</li>
+                <li>부산 동래구 온천제1동</li>
+                <li>부산 동래구 온천동</li>
+                <li>부산 동래구 명륜동</li>
+                <li>부산 동래구 온천제2동</li>
+                <li>부산 동래구 온천제1동</li>
+                <li>부산 동래구 온천동</li>
+                <li>부산 동래구 명륜동</li>
+                <li>부산 동래구 온천제2동</li>
+              </ul>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="btn under"
+        onclick="location.href='complete_join.html'"
+      >
+        완료
+      </button>
+    </div>
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+    <script src="../../js/location.js"></script>
+  </body>
+</html>

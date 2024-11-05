@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STRIKE</title>
+    <!-- FONT -->
+    <link rel="stylesheet" href="../../css/font.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <header id="header" class="h-shadow">
+        <ul class="status">
+          <li>
+            <a href="join.html"
+              ><img src="../../img/common/back.svg" alt="back"
+            /></a>
+          </li>
+          <li class="title"><h2>회원가입</h2></li>
+          <li class="util"></li>
+        </ul>
+      </header>
+      <main id="main" class="join">
+        <h3>
+          로그인 아이디와 비밀번호를 <br />
+          입력해주세오.
+        </h3>
+        <form class="join-form">
+          <fieldset>
+            <legend>아이디(이메일)</legend>
+            <input type="text" placeholder="이메일을 입력해주세요." />
+          </fieldset>
+          <fieldset>
+            <legend>비밀번호</legend>
+            <input
+              type="pw"
+              placeholder="비밀번호 입력해주세요."
+              class="br-up"
+            />
+            <input
+              type="pw"
+              placeholder="비밀번호 확인 해주세요"
+              class="br-bottom"
+            />
+          </fieldset>
+          <fieldset>
+            <legend>휴대전화</legend>
+            <div class="input-box">
+              <input type="tel" placeholder="휴대전화번호를 입력해주세요." />
+              <button type="button" class="btn-check">인증</button>
+            </div>
+            <div class="input-box">
+              <input type="number" placeholder="인증번호 입력해주세요." />
+              <button type="button" class="btn-check">확인</button>
+            </div>
+          </fieldset>
+        </form>
+      </main>
+      <button
+        type="button"
+        class="btn under"
+        onclick="location.href='join3.html'"
+      >
+        다음
+      </button>
+    </div>
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+    <script src="../../js/login.js"></script>
+  </body>
+</html>
