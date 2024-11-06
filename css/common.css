@@ -61,7 +61,10 @@ body {
   position: relative;
   padding: 0 16px;
   overflow-y: scroll;
-  margin-bottom: 102px;
+}
+#main.navbar-bottom {
+  padding: 0 0px 60px;
+  height: calc(100vh - 103px);
 }
 #main::-webkit-scrollbar {
   display: none;
@@ -81,11 +84,15 @@ input::placeholder {
 
 #footer {
   position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 32px;
   max-width: 375px;
   height: 70px;
   width: 100%;
   box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.1);
+  background: var(--run-main-white);
+  z-index: 99;
 }
 #footer .navbar {
   display: flex;
@@ -94,4 +101,37 @@ input::placeholder {
 }
 #footer .navbar li {
   padding: 23px 0;
+}
+
+section > h4 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 10px;
+  background: var(--run-main-white);
+  font-size: 1.2rem;
+  color: var(--run-main-green);
+  border: 1px solid var(--run-main-green);
+  border-radius: 50px;
+  color: var(--run-main-green);
+}
+.tag span {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.tag img {
+  margin-top: 2px;
+  margin-right: 2px;
+  width: 12px;
+  height: 12px;
+}
+.running #header {
+  background: transparent;
+}
+.running {
+  background: url(../img/sub/running-map.jpg) no-repeat top center/cover;
 }

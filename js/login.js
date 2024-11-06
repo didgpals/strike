@@ -10,7 +10,7 @@ $(function () {
 
     // 로그인 성공 여부 확인
     if (loginId === correctId && loginPw === correctPw) {
-      location.href = "../join/join.html";
+      location.href = "../main/main.html";
       // 로그인 성공 후 다른 페이지로 이동하는 경우
       // window.location.href = "welcome.html";
     } else {
