@@ -1,137 +1,192 @@
 @charset "utf-8";
+
+/*reset.css에 버튼 background-color랑 border 값 없앴으여*/
+
 body {
   display: flex;
   justify-content: center;
+  /*이현_수정*/
+  color: var(--run-main-black);
+  line-height: 1.5;
   font-size: 1.6rem;
   font-family: "Pretendard", sans-serif;
-  line-height: 1.5;
 }
 
 #wrap {
-  position: relative;
   min-width: 375px;
-  max-width: 375px;
+  width: 375px;
   height: 100vh;
   border: 1px solid #000;
-  overflow: hidden;
-}
-.btn {
-  width: 100%;
-  height: 50px;
-  background: var(--run-main-green);
-  color: var(--run-main-white);
-  border-radius: 10px;
-  font-size: 1.6rem;
-}
-.btn.under {
-  position: absolute;
-  left: 50%;
-  bottom: 54px;
-  transform: translateX(-50%);
-  width: calc(100% - 32px);
-}
-#header {
-  position: sticky;
-  background: var(--run-main-white) center;
-}
-#header .status {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 23px 16px;
-}
-#header a {
-  display: block;
-}
-#header .title {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-#header .title h2 {
-  font-size: 1.8rem;
-  font-weight: 500;
-  color: #222;
-}
-#header.h-shadow {
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
-#main {
-  position: relative;
+.inner {
   padding: 0 16px;
-  overflow-y: scroll;
-}
-#main.navbar-bottom {
-  padding: 0 0px 60px;
-  height: calc(100vh - 103px);
-}
-#main::-webkit-scrollbar {
-  display: none;
-}
-input:not(input[type="checkbox"], input[type="radio"]) {
-  display: block;
-  width: 100%;
-  margin-bottom: 16px;
-  padding: 16px 12px;
-  border: 1px solid var(--run-main-lightgray);
-  border-radius: 10px;
-  outline: none;
-}
-input::placeholder {
-  color: var(--run-main-lightgray);
 }
 
-#footer {
+/*탑 바(임시)*/
+#header {
   position: fixed;
   left: 50%;
+  top: 0;
+  width: 375px;
+  background: var(--run-main-white);
   transform: translateX(-50%);
-  bottom: 32px;
-  max-width: 375px;
-  height: 70px;
-  width: 100%;
-  box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.1);
-  background: var(--run-main-white);
-  z-index: 99;
+  z-index: 10;
 }
-#footer .navbar {
+#main {
+  padding: 70px 0 0;
+}
+
+.topbar {
+  position: relative;
   display: flex;
-  justify-content: center;
-  gap: 40px;
+  height: 70px;
+  padding: 0 16px;
+  align-items: center;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
 }
-#footer .navbar li {
-  padding: 23px 0;
+.topbar .btn_back {
+  width: 24px;
+  height: 24px;
+  font-size: 0;
+  background: url(../img/common/icon_back_small.svg) no-repeat center/cover;
 }
-
-section > h4 {
-  font-size: 1.8rem;
+.topbar h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
   font-weight: 600;
-  margin-bottom: 15px;
+  font-size: 1.8rem;
+  color: var(--run-main-black);
+  transform: translate(-50%, -50%);
+}
+.topbar img {
+  width: 73px;
+}
+.topbar_main {
+  justify-content: end;
+}
+.topbar_sub {
+  justify-content: space-between;
+}
+.topbar_back {
+  justify-content: start;
 }
 
-.tag {
-  display: inline-block;
-  padding: 4px 10px;
+.util {
+  display: flex;
+  gap: 16px;
+}
+.util a {
+  width: 24px;
+  height: 24px;
+  font-size: 0;
+  color: transparent;
+}
+.util .btn_bell {
+  background: url(../img/common/icon_bell_on.svg) no-repeat center/cover;
+}
+.util .btn_share {
+  background: url(../img/common/icon_share.svg) no-repeat center/cover;
+}
+.util .btn_setting {
+  background: url(../img/common/icon_setting.svg) no-repeat center/cover;
+}
+
+.util .btn_alarm {
+  background: url(../img/common/icon_alarm.svg) no-repeat center/cover;
+}
+/*바텀 바*/
+#nav_bar {
+  display: flex;
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  width: 375px;
+  height: 102px;
+  padding: 23px 40px;
+  align-items: start;
+  justify-content: space-between;
   background: var(--run-main-white);
-  font-size: 1.2rem;
-  color: var(--run-main-green);
-  border: 1px solid var(--run-main-green);
-  border-radius: 50px;
-  color: var(--run-main-green);
+  box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.2);
+  transform: translateX(-50%);
+  z-index: 10;
 }
-.tag span {
-  font-size: 1.2rem;
+#nav_bar li {
+  width: 24px;
+  height: 24px;
+}
+#nav_bar li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+  color: transparent;
+}
+
+#nav_bar li:first-child a {
+  background: url(../img/common/icon_challenge_gray.svg);
+}
+#nav_bar li:nth-child(2) a {
+  background: url(../img/common/icon_routine_gray.svg);
+}
+#nav_bar li:nth-child(3) a {
+  background: url(../img/common/icon_home_gray.svg);
+}
+#nav_bar li:nth-child(4) a {
+  background: url(../img/common/icon_crew_gray.svg);
+}
+#nav_bar li:last-child a {
+  background: url(../img/common/icon_my_gray.svg);
+}
+
+#nav_bar li.active:first-child a {
+  background: url(../img/common/icon_challenge_green.svg);
+}
+#nav_bar li.active:nth-child(2) a {
+  background: url(../img/common/icon_routine_green.svg);
+}
+#nav_bar li.active:nth-child(3) a {
+  background: url(../img/common/icon_home_green.svg);
+}
+#nav_bar li.active:nth-child(4) a {
+  background: url(../img/common/icon_crew_green.svg);
+}
+#nav_bar li.active:last-child a {
+  background: url(../img/common/icon_my_green.svg);
+}
+
+/*하단 고정 버튼*/
+.btn_area {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  width: 375px;
+  padding: 20px 16px;
+  background: var(--run-main-white);
+  transform: translateX(-50%);
+}
+.active .btn_btm {
+  display: block;
+  width: 343px;
+  height: 50px;
+  color: var(--run-main-white);
+  background: var(--run-main-green);
+  font-size: 1.6rem;
   font-weight: 500;
+  border-radius: 10px;
+  line-height: 50px;
+  text-align: center;
 }
-.tag img {
-  margin-top: 2px;
-  margin-right: 2px;
-  width: 12px;
-  height: 12px;
-}
-.running #header {
-  background: transparent;
-}
-.running {
-  background: url(../img/sub/running-map.jpg) no-repeat top center/cover;
+.default .btn_btm {
+  display: block;
+  width: 343px;
+  height: 50px;
+  color: var(--run-main-green);
+  background: var(--run-main-white);
+  font-weight: 500;
+  border: 2px solid var(--run-main-green);
+  border-radius: 10px;
+  line-height: 50px;
+  text-align: center;
 }

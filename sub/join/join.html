@@ -10,22 +10,21 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../../css/reset.css" />
     <link rel="stylesheet" href="../../css/common.css" />
-    <link rel="stylesheet" href="../../css/style.css" />
+    <!-- <link rel="stylesheet" href="../../css/h-common.css" /> -->
+    <link rel="stylesheet" href="../../css/style2.css" />
   </head>
   <body>
     <div id="wrap">
-      <header id="header" class="h-shadow">
-        <ul class="status">
-          <li>
-            <a href="../login/login.html"
-              ><img src="../../img/common/back.svg" alt="back"
-            /></a>
-          </li>
-          <li class="title"><h2>회원가입</h2></li>
-          <li class="util"></li>
-        </ul>
+      <header id="header" class="topbar topbar_sub">
+        <a href="../login/login.html" class="btn_back">뒤로가기</a>
+        <h1>회원가입 정보</h1>
+        <div class="util">
+          <a href="#" class="btn_share">공유하기</a>
+        </div>
+        <!--//util-->
       </header>
-      <main id="main" class="join">
+      <!--//topbar_main-->
+      <main id="main" class="join side-padding">
         <h3>
           가입하려면<br />
           약관에 동의가 필요해요.
@@ -61,13 +60,9 @@
           </tbody>
         </table>
       </main>
-      <button
-        type="button"
-        class="btn under"
-        onclick="location.href='join2.html'"
-      >
-        동의하고 가입하기
-      </button>
+      <div class="btn_area active">
+        <a href="join2.html" class="btn_btm"> 동의하고 가입하기</a>
+      </div>
     </div>
     <script src="../../js/jquery-3.7.1.min.js"></script>
     <script src="../../js/login.js"></script>

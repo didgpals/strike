@@ -11,6 +11,66 @@
   --run-main-lightgray02: #eeeeee;
 }
 
+/* Global */
+/* .btn {
+  max-width: 375px;
+  width: 100%;
+  height: 50px;
+  background: var(--run-main-green);
+  color: var(--run-main-white);
+  border-radius: 10px;
+  font-size: 1.6rem;
+}
+.btn.under {
+  position: absolute;
+  max-width: 343px;
+  width: calc(100% - 32px);
+  left: 50%;
+  bottom: 54px;
+  transform: translateX(-50%);
+} */
+
+input:not(input[type="checkbox"], input[type="radio"]) {
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 16px 12px;
+  border: 1px solid var(--run-main-lightgray);
+  border-radius: 10px;
+  outline: none;
+}
+input::placeholder {
+  color: var(--run-main-lightgray);
+}
+
+#wrap .side-padding {
+  padding: 70px 16px 0;
+}
+.tag {
+  display: inline-block;
+  padding: 4px 10px;
+  background: var(--run-main-white);
+  font-size: 1.2rem;
+  color: var(--run-main-green);
+  border: 1px solid var(--run-main-green);
+  border-radius: 50px;
+  color: var(--run-main-green);
+}
+.tag span {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.tag img {
+  margin-top: 2px;
+  margin-right: 2px;
+  width: 12px;
+  height: 12px;
+}
+
+#main {
+  position: relative;
+  padding: 70px 16px 88px;
+}
 /* splash */
 .splash {
   display: flex;
@@ -110,6 +170,12 @@
 }
 
 /* login */
+.login-wrap .topbar {
+  box-shadow: none;
+}
+.login-wrap #header h1 {
+  display: none;
+}
 .login-logo {
   margin-top: 40px;
   text-align: center;
@@ -257,7 +323,9 @@ table input[type="checkbox"]:checked {
 .dimmd {
   display: none;
   position: absolute;
+  left: translateX(-50%);
   top: 0;
+  max-width: 375px;
   width: 100%;
   height: 100vh;
   background: rgba(0, 0, 0, 0.2);
@@ -316,6 +384,7 @@ table input[type="checkbox"]:checked {
   justify-content: center;
   align-items: center;
   position: absolute;
+  max-width: 375px;
   width: 100%;
   height: 100%;
   background: url(../img/sub/complete-join.svg) no-repeat center/ cover;
@@ -327,7 +396,13 @@ table input[type="checkbox"]:checked {
   font-weight: 600;
   text-align: center;
 }
+.complete-join .btn_area {
+  background: transparent;
+}
 /* main */
+#wrap .home {
+  padding: 70px 0 88px;
+}
 .title img {
   width: 73px;
   height: 25px;
@@ -450,9 +525,13 @@ table input[type="checkbox"]:checked {
   margin-bottom: 30px;
   padding: 0 16px;
 }
+.home section h4 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
 .home section:nth-of-type(2) h4,
-.home section:nth-of-type(3) h4,
-.home section:nth-of-type(4) h4 {
+.home section:nth-of-type(3) h4 {
   padding-left: 16px;
 }
 .home section:nth-of-type(2) {
@@ -657,5 +736,10 @@ table input[type="checkbox"]:checked {
 }
 
 /* running */
+
+.running #header {
+  background: transparent;
+}
 .running {
+  background: url(../img/sub/running-map.jpg) no-repeat top center/cover;
 }

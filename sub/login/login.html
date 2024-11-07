@@ -10,22 +10,20 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../../css/reset.css" />
     <link rel="stylesheet" href="../../css/common.css" />
-    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/style2.css" />
   </head>
   <body>
-    <div id="wrap">
-      <header id="header">
-        <ul class="status">
-          <li>
-            <a href="../onboard/onboard.html"
-              ><img src="../../img/common/back.svg" alt="back"
-            /></a>
-          </li>
-          <li class="title"></li>
-          <li class="util"></li>
-        </ul>
+    <div id="wrap" class="login-wrap">
+      <header id="header" class="topbar topbar_sub">
+        <a href="../onboard/onboard.html" class="btn_back">뒤로가기</a>
+        <h1></h1>
+        <div class="util">
+          <a href="#"></a>
+        </div>
+        <!--//util-->
       </header>
-      <main id="main">
+      <!--//topbar_main-->
+      <main id="main" class="side-padding">
         <div class="login-logo">
           <img
             src="../../img/common/logo-g.svg"
@@ -49,7 +47,15 @@
               placeholder="비밀번호"
               class="login-pw"
             />
-            <button type="button" class="btn btn-login">로그인</button>
+            <div class="active">
+              <button
+                type="button"
+                href="../main/main.html"
+                class="btn_btm btn-login"
+              >
+                로그인하기
+              </button>
+            </div>
           </fieldset>
           <fieldset class="pw-join">
             <a href="#">비밀번호 찾기</a>

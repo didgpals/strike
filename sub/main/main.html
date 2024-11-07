@@ -14,24 +14,19 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="../../css/common.css" />
-    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/style2.css" />
   </head>
   <body>
     <div id="wrap">
-      <header id="header" class="h-shadow">
-        <ul class="status">
-          <li></li>
-          <li class="title">
-            <img src="../../img/common/logo-g.svg" alt="strike" />
-          </li>
-          <li class="util">
-            <ul>
-              <img src="../../img/common/alarm.svg" alt="alarm" />
-            </ul>
-          </li>
-        </ul>
+      <header id="header" class="topbar topbar_sub">
+        <a href="#" class="btn_back">뒤로가기</a>
+        <img src="../../img/common/logo-g.svg" alt="strike" />
+        <div class="util">
+          <a href="#" class="btn_alarm">알람</a>
+        </div>
+        <!--//util-->
       </header>
-      <main id="main" class="navbar-bottom home">
+      <main id="main" class="home">
         <div class="main-running">
           <div class="percent">
             <img src="../../img/main/percent.svg" alt="percent" />
@@ -57,14 +52,9 @@
               </li>
             </ul>
           </div>
-
-          <button
-            type="button"
-            class="btn padding"
-            onclick="location.href='running.html'"
-          >
-            러닝하기
-          </button>
+          <div class="active">
+            <a href="../main/running.html" class="btn_btm">러닝하기</a>
+          </div>
         </div>
         <section class="main-crew">
           <h4>크루모임 언제지?</h4>
@@ -346,38 +336,14 @@
           </div>
         </section>
       </main>
-      <footer id="footer">
-        <ul class="navbar">
-          <li>
-            <a href="#">
-              <img
-                src="../../img/common/challenge-disable.svg"
-                alt="challenge"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="../../img/common/routin-disable.svg" alt="routine"
-            /></a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="../../img/common/home-active.svg" alt="home" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="../../img/common/crew-disable.svg" alt="crew" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="../../img/common/mypage-disable.svg" alt="mypage" />
-            </a>
-          </li>
-        </ul>
-      </footer>
+      <ul id="nav_bar">
+        <li class="active"><a href="challenge.html">챌린지</a></li>
+        <li><a href="../routine/routine.html">루틴</a></li>
+        <li><a href="#">메인홈</a></li>
+        <li><a href="#">크루</a></li>
+        <li><a href="#">마이페이지</a></li>
+      </ul>
+      <!--//nav_bar-->
     </div>
     <script src="../../js/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
