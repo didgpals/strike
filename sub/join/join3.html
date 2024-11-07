@@ -15,14 +15,14 @@
   <body>
     <div id="wrap">
       <header id="header" class="topbar topbar_sub">
-        <a href="join2.html" class="btn_back">뒤로가기</a>
+        <a href="join.html" class="btn_back">뒤로가기</a>
         <h1>회원가입 정보</h1>
         <div class="util">
           <a href="#" class="btn_share">공유하기</a>
         </div>
         <!--//util-->
       </header>
-      <main id="main" class="join s">
+      <main id="main" class="join">
         <h3>
           간단한 정보를 <br />
           알려주세요.
@@ -51,7 +51,11 @@
                 placeholder="우리 동네 이름(동,읍,면)으로 검색"
                 class="pop-up-search-mgt"
               />
-              <button type="button" class="btn">현재 위치로 찾기</button>
+              <div class="active">
+                <a href="javascript:void(0)" class="btn_btm">
+                  현재 위치로 찾기</a
+                >
+              </div>
             </fieldset>
             <fieldset>
               <h4>주변동네</h4>
@@ -74,7 +78,7 @@
         </div>
       </div>
       <div class="btn_area active">
-        <a href="complete-join.html".html" class="btn_btm"> 완료</a>
+        <a href="complete-join.html" class="btn_btm"> 다음</a>
       </div>
     </div>
     <script src="../../js/jquery-3.7.1.min.js"></script>

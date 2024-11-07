@@ -15,7 +15,7 @@
   <body>
     <div id="wrap" class="running">
       <header id="header" class="topbar topbar_sub">
-        <a href="../onboard/onboard.html" class="btn_back">뒤로가기</a>
+        <a href="main.html" class="btn_back">뒤로가기</a>
         <h1></h1>
         <div class="util">
           <a href="#"></a>
@@ -23,8 +23,56 @@
         <!--//util-->
       </header>
       <!--//topbar_main-->
-      <main id="main" class="side-padding"></main>
+      <main id="main">
+        <div class="current-location">
+          <div class="current-location-point-dot"></div>
+          <div class="current-location-point"></div>
+        </div>
+        <div class="gradient-bg">
+          <h2>12.87km</h2>
+          <ul class="count">
+            <li>
+              <p>44m</p>
+              <span>시간</span>
+            </li>
+            <li>
+              <p>5'33"</p>
+              <span>페이스</span>
+            </li>
+            <li>
+              <p>163</p>
+              <span>심박수</span>
+            </li>
+          </ul>
+          <div class="running-btn-box">
+            <div class="btn-shadow">목표 설정</div>
+            <div class="btn-play">시작</div>
+            <div class="btn-shadow btn-play-music">음악 연동</div>
+          </div>
+        </div>
+      </main>
+      <div class="dimmd">
+        <div class="pop-up-choose">
+          <h2>음악 연동하기</h2>
+          <img src="../../img/common/close.svg" alt="close" class="btn-close" />
+          <ul>
+            <li>
+              <a href="https://music.apple.com/kr/new" target="_blank">
+                <img src="../../img/sub/applemusic.svg" alt="apple-music" />
+                <p>애플뮤직</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://open.spotify.com/" target="_blank">
+                <img src="../../img/sub/spotify.svg" alt="apple-music" />
+                <p>스포티파이</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <script src="../../js/jquery-3.7.1.min.js"></script>
+    <script src="../../js/map.js"></script>
   </body>
 </html>
