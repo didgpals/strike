@@ -892,3 +892,8 @@ table input[type="checkbox"]:checked {
   border: 1px solid var(--run-main-lightgray02);
   border-radius: 20px;
 }
+
+/* crew */
+#main.crew {
+  padding: 130px 16px 60px;
+}

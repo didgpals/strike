@@ -195,3 +195,24 @@ body {
 [class*="btn"] {
   cursor: pointer;
 }
+
+#menu_list {
+  display: flex;
+  top: 70px;
+  position: fixed;
+  max-width: 375px;
+  width: 100%;
+}
+#menu_list button.active {
+  color: var(--run-main-green);
+  border-bottom: 2px solid var(--run-main-green);
+}
+#menu_list button {
+  display: flex;
+  width: calc(100% / 2);
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  color: var(--run-main-gray);
+}
