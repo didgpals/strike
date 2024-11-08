@@ -322,7 +322,7 @@ table input[type="checkbox"]:checked {
 .location {
   background: url(../img/sub/location.svg) no-repeat right 12px center;
 }
-.dimmd {
+.dimmed {
   display: none;
   position: absolute;
   left: 50%;
