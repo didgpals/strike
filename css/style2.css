@@ -322,66 +322,6 @@ table input[type="checkbox"]:checked {
 .location {
   background: url(../img/sub/location.svg) no-repeat right 12px center;
 }
-.dimmed {
-  display: none;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 0;
-  max-width: 375px;
-  width: 100%;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.2);
-  z-index: 2;
-}
-.pop-up {
-  position: absolute;
-  bottom: -100%;
-  width: 100%;
-  background: var(--run-main-white);
-  padding: 24px 16px 0;
-  border-radius: 20px 20px 0 0;
-  transition: all 0.5s;
-}
-.pop-up-top-txt {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.pop-up-top-txt h3 {
-  font-size: 1.8rem;
-  font-weight: 600;
-}
-
-.pop-up-search-mgt {
-  margin-top: 16px;
-}
-.pop-up-search fieldset h4 {
-  font-size: 1.6rem;
-}
-.pop-up-search fieldset ul {
-  font-size: 1.4rem;
-}
-.pop-up-search fieldset:nth-child(2) {
-  margin-top: 36px;
-}
-.pop-up-search fieldset:nth-child(2) ul {
-  height: 326px;
-  overflow-y: scroll;
-}
-.pop-up-search fieldset:nth-child(2) ul::-webkit-scrollbar {
-  display: none;
-}
-.pop-up-search ul li {
-  padding: 16px 0;
-  border-bottom: 1px solid var(--run-main-lightgray02);
-}
-.pop-up-search ul li:hover {
-  background: var(--run-main-lightgray02);
-}
-.pop-up-search ul li:last-child {
-  border: 0;
-}
 .complete-join {
   display: flex;
   justify-content: center;
@@ -851,6 +791,13 @@ table input[type="checkbox"]:checked {
     transform: scale(3.5);
     opacity: 0;
   }
+}
+.running .popup01 ul li:first-child a::before {
+  background: url(../img/sub/applemusic.svg) no-repeat center / cover;
+}
+
+.running .popup01 ul li:last-child a::before {
+  background: url(../img/sub/spotify.svg) no-repeat center / cover;
 }
 .pop-up-choose {
   position: absolute;

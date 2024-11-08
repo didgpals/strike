@@ -1,8 +1,8 @@
 $(function () {
   $(".btn-play-music").on("click", function () {
-    $(".dimmd").fadeIn();
+    $("#dimmed").fadeIn();
   });
-  $(".pop-up-choose .btn-close").on("click", function () {
-    $(".dimmd").fadeOut();
+  $(".btn_close").on("click", function () {
+    $("#dimmed").fadeOut();
   });
 });
