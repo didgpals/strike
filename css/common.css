@@ -37,7 +37,7 @@ body {
   width: 375px;
   background: var(--run-main-white);
   transform: translateX(-50%);
-  z-index: 10;
+  z-index: 11;
 }
 #header > img {
   width: 73px;
@@ -163,6 +163,10 @@ body {
 }
 #nav_bar li.active:last-child a {
   background: url(../img/common/icon_my_green.svg);
+}
+
+.util .btn_search {
+  background: url(../img/common/icon_search.svg);
 }
 
 /*탭 메뉴*/

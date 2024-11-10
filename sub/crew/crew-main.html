@@ -27,21 +27,321 @@
         <!--//util-->
       </header>
       <main id="main" class="crew">
-         <div id="menu_list">
+        <div id="menu_list">
           <button class="active">챌린지</button>
-          <button>마라톤</button>
+          <button>게시판</button>
         </div>
         <!--//menu_list-->
+        <ul class="tab_tag_menu">
+          <li class="tab_tag active">나의 크루</li>
+          <li class="tab_tag">크루둘러보기</li>
+        </ul>
+        <div class="content">
+          <div class="my-crew">
+            <section class="crew-on-crew">
+              <h4>참여 중인 정모</h4>
+              <ul class="crew-on-crew-list">
+                <li>
+                  <a href="#">
+                    <img src="../../img/sub/crew-on01.jpg" alt="crew-on-img" />
+                    <div class="crew-on-txt">
+                      <h5>평일 정기 모임</h5>
+                      <p>수영구 &middot; 11.05(화) &middot; 18:00</p>
+                      <span>정모 인원 2/12</span>
+                    </div>
+                    <div class="d-date">D-5</div>
+                  </a>
+                </li>
+              </ul>
+            </section>
+            <section class="crew-on-crew">
+              <h4>내가 가입한 크루</h4>
+              <ul class="crew-on-crew-list">
+                <li>
+                  <a href="#">
+                    <div class="crew-on-img">
+                      <img
+                        src="../../img/sub/crew-on02.jpg"
+                        alt="crew-on-img"
+                      />
+                      <div class="icon-like"></div>
+                    </div>
+                    <div class="crew-on-txt">
+                      <h5>수영구 러닝 크루</h5>
+                      <p>수영구에서 함께 러닝할 사람 찾아요!</p>
+                      <ul class="tag_box">
+                        <li class="tag">
+                          <img src="../../img/common/map.svg" alt="" />수영구
+                        </li>
+                        <li class="tag">
+                          <img src="../../img/common/people.svg" alt="" />27명
+                        </li>
+                        <li class="tag">
+                          <img src="../../img/common/fire.svg" alt="" />27.4
+                        </li>
+                      </ul>
+                    </div></a
+                  >
+                </li>
+              </ul>
+            </section>
+            <section class="main-crew-recommend">
+              <h4>추천 크루</h4>
+              <div class="swiper main-crew-recommend-list">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <div class="mcr-img">
+                      <img
+                        src="../../img/main/crew-recommend1.png"
+                        alt="crew-recommend1"
+                      />
+                      <div class="tag">
+                        <img src="../../img/common/fire.svg" alt="rate" /><span
+                          >72.4</span
+                        >
+                      </div>
+                    </div>
+                    <div class="mcr-info">
+                      <div class="mcr-title">
+                        <img
+                          src="../../img/main/mcr-profile01.png"
+                          alt="profile"
+                        />
+                        <div class="mcr-title-txt">
+                          <h5>부산 러너 모임방</h5>
+                          <div class="tag-box">
+                            <span class="tag">
+                              <img src="../../img/common/map.svg" alt="" />
+                              <span>수영구</span>
+                            </span>
+                            <span class="tag">
+                              <img src="../../img/common/people.svg" alt="" />
+                              <span>27명</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mcr-detail">
+                        <p>
+                          러닝 초보, 러닝 중독 상관 없이 들어와서 실력
+                          늘려봅시다! 친목 모임은 정중히 거절하겠습니다.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="mcr-img">
+                      <img
+                        src="../../img/main/crew-recommend2.png"
+                        alt="crew-recommend1"
+                      />
+                      <div class="tag">
+                        <img src="../../img/common/fire.svg" alt="rate" /><span
+                          >72.4</span
+                        >
+                      </div>
+                    </div>
+                    <div class="mcr-info">
+                      <div class="mcr-title">
+                        <img
+                          src="../../img/main/mcr-profile02.png"
+                          alt="profile"
+                        />
+                        <div class="mcr-title-txt">
+                          <h5>부산 러너 모임방</h5>
+                          <div class="tag-box">
+                            <span class="tag">
+                              <img src="../../img/common/map.svg" alt="" />
+                              <span>수영구</span>
+                            </span>
+                            <span class="tag">
+                              <img src="../../img/common/people.svg" alt="" />
+                              <span>27명</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mcr-detail">
+                        <p>
+                          러닝 초보, 러닝 중독 상관 없이 들어와서 실력
+                          늘려봅시다! 친목 모임은 정중히 거절하겠습니다.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="mcr-img">
+                      <img
+                        src="../../img/main/crew-recommend3.png"
+                        alt="crew-recommend1"
+                      />
+                      <div class="tag">
+                        <img src="../../img/common/fire.svg" alt="rate" /><span
+                          >72.4</span
+                        >
+                      </div>
+                    </div>
+                    <div class="mcr-info">
+                      <div class="mcr-title">
+                        <img
+                          src="../../img/main/mcr-profile03.png"
+                          alt="profile"
+                        />
+                        <div class="mcr-title-txt">
+                          <h5>부산 러너 모임방</h5>
+                          <div class="tag-box">
+                            <span class="tag">
+                              <img src="../../img/common/map.svg" alt="" />
+                              <span>수영구</span>
+                            </span>
+                            <span class="tag">
+                              <img src="../../img/common/people.svg" alt="" />
+                              <span>27명</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mcr-detail">
+                        <p>
+                          러닝 초보, 러닝 중독 상관 없이 들어와서 실력
+                          늘려봅시다! 친목 모임은 정중히 거절하겠습니다.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+          <div class="look-around-crew">
+            <section class="crew-on-crew">
+              <h4>내 주변 크루</h4>
+              <ul class="crew-on-crew-list">
+                <li>
+                  <a href="#">
+                    <div class="crew-on-img">
+                      <img
+                        src="../../img/sub/crew-on02.jpg"
+                        alt="crew-on-img"
+                      />
+                    </div>
+                    <div class="crew-on-txt">
+                      <h5>수영구 러닝 크루</h5>
+                      <p>수영구에서 함께 러닝할 사람 찾아요!</p>
+                      <ul class="tag_box">
+                        <li class="tag">
+                          <img src="../../img/common/map.svg" alt="" />수영구
+                        </li>
+                        <li class="tag">
+                          <img src="../../img/common/people.svg" alt="" />27명
+                        </li>
+                        <li class="tag">
+                          <img src="../../img/common/fire.svg" alt="" />27.4
+                        </li>
+                      </ul>
+                    </div></a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="crew-on-img">
+                      <img
+                        src="../../img/sub/crew-look-around-img01.jpg"
+                        alt="crew-on-img"
+                      />
+                    </div>
+                    <div class="crew-on-txt">
+                      <h5>수영구 러닝 크루</h5>
+                      <p>함께 뛸 2030 크루원 모집합니다.</p>
+                      <ul class="tag_box">
+                        <li class="tag">
+                          <img src="../../img/common/map.svg" alt="" />수영구
+                        </li>
+                        <li class="tag">
+                          <img src="../../img/common/people.svg" alt="" />46명
+                        </li>
+                        <li class="tag">
+                          <img src="../../img/common/fire.svg" alt="" />77.1
+                        </li>
+                      </ul>
+                    </div></a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="crew-on-img">
+                      <img
+                        src="../../img/sub/crew-on02.jpg"
+                        alt="crew-on-img"
+                      />
+                    </div>
+                    <div class="crew-on-txt">
+                      <h5>크루 스파크</h5>
+                      <p>스파크처럼 빠르게! 함께 달릴 크루 모집중!</p>
+                      <ul class="tag_box">
+                        <li class="tag">
+                          <img src="../../img/common/map.svg" alt="" />수영구
+                        </li>
+                        <li class="tag">
+                          <img src="../../img/common/people.svg" alt="" />32명
+                        </li>
+                        <li class="tag">
+                          <img src="../../img/common/fire.svg" alt="" />66.9
+                        </li>
+                      </ul>
+                    </div></a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="crew-on-img">
+                      <img
+                        src="../../img/sub/crew-look-around-img02.jpg"
+                        alt="crew-on-img"
+                      />
+                    </div>
+                    <div class="crew-on-txt">
+                      <h5>광안리 러닝 크루</h5>
+                      <p>바다뷰 만끽하며 러닝할 크루원들 모여라!!</p>
+                      <ul class="tag_box">
+                        <li class="tag">
+                          <img src="../../img/common/map.svg" alt="" />수영구
+                        </li>
+                        <li class="tag">
+                          <img src="../../img/common/people.svg" alt="" />27명
+                        </li>
+                        <li class="tag">
+                          <img src="../../img/common/fire.svg" alt="" />62.4
+                        </li>
+                      </ul>
+                    </div></a
+                  >
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </main>
       <ul id="nav_bar">
         <li><a href="challenge.html">챌린지</a></li>
         <li><a href="../routine/routine.html">루틴</a></li>
-        <li class="active"><a href="#">메인홈</a></li>
-        <li><a href="#">크루</a></li>
+        <li><a href="../main/main.html">메인홈</a></li>
+        <li class="active"><a href="crew-main.html">크루</a></li>
         <li><a href="#">마이페이지</a></li>
       </ul>
       <!--//nav_bar-->
+      <a href="#" class="crew-add"></a>
     </div>
     <script src="../../js/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../../js/crew.js"></script>
+    <script>
+      let mainCrewRecommend = new Swiper(".main-crew-recommend-list", {
+        slidesPerView: 1.58,
+        spaceBetween: 13,
+        slidesOffsetAfter: 16,
+        slidesOffsetBefore: 16,
+      });
+    </script>
   </body>
 </html>
