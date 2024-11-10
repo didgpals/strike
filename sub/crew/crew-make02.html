@@ -15,22 +15,37 @@
   <body>
     <div id="wrap">
       <header id="header" class="topbar topbar_sub">
-        <a href="join.html" class="btn_back">뒤로가기</a>
-        <h1>회원가입 정보</h1>
+        <a href="crew-make.html" class="btn_back">뒤로가기</a>
+        <h1>크루개설</h1>
         <div class="util">
           <a href="#"></a>
         </div>
         <!--//util-->
       </header>
-      <main id="main" class="join">
-        <h3>
-          간단한 정보를 <br />
-          알려주세요.
-        </h3>
+      <main id="main" class="crew_make02">
         <form class="join-form">
           <fieldset>
-            <input type="text" placeholder="닉네임을 입력해주세요." />
-            <input type="text" placeholder="우리 동네 찾기" class="location" />
+            <legend>지역 설정</legend>
+            <input
+              type="text"
+              placeholder="크루를 진행할 동네를 설정해주세요."
+              class="location"
+            />
+          </fieldset>
+          <fieldset>
+            <legend>크루 이름</legend>
+            <input type="text" placeholder="모임 이름을 정해주세요." />
+          </fieldset>
+          <fieldset>
+            <legend>크루 소개</legend>
+            <textarea
+              class="info"
+              placeholder="모임 소개글을 적어주세요."
+            ></textarea>
+          </fieldset>
+          <fieldset>
+            <legend>정원</legend>
+            <input type="text" placeholder="이메일을 입력해주세요." />
           </fieldset>
         </form>
       </main>
@@ -80,7 +95,7 @@
         </div>
       </div>
       <div class="btn_area">
-        <a href="complete-join.html" class="active"> 다음</a>
+        <a href="join3.html" class="active"> 크루 만들기</a>
       </div>
     </div>
     <script src="../../js/jquery-3.7.1.min.js"></script>
