@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STRIKE</title>
+    <!-- FONT -->
+    <link rel="stylesheet" href="../../css/font.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/style2.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <header id="header" class="topbar topbar_sub">
+        <a href="crew-make.html" class="btn_back">뒤로가기</a>
+        <h1>정모 평가하기</h1>
+        <div class="util">
+          <a href="#"></a>
+        </div>
+        <!--//util-->
+      </header>
+      <main id="main" class="crew_rm_rate">
+        <form class="join-form">
+          <h2>이번 정모는 어떠셨나요?</h2>
+          <p>정모 평가는 크루의 스파크로 측정되어요!</p>
+          <fieldset>
+            <label>별점 평가 하기</label>
+            <ul>
+              <li class="rate_bad"><p>별로에요</p></li>
+              <li class="rate_good active"><p>좋아요</p></li>
+              <li class="rate_best"><p>최고예요!</p></li>
+            </ul>
+          </fieldset>
+          <fieldset class="crew_rate_check">
+            <label>평가내용</label>
+            <ul>
+              <li>
+                <input type="checkbox" id="rate-check" /><label for="rate-check"
+                  >분위기가 좋지 않았어요.</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="rate-check" /><label for="rate-check"
+                  >개인의 러닝 목표달성하기 어려웠어요.</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="rate-check" /><label for="rate-check"
+                  >러닝 관련 교육이나 정보공유가 없어요.</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="rate-check" /><label for="rate-check"
+                  >참여자 간의 소통이 없어요.</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="rate-check" /><label for="rate-check"
+                  >모임 시간과 장소가 불편했어요.</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="rate-check" /><label for="rate-check"
+                  >기타</label
+                >
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </main>
+      <div class="btn_area">
+        <a href="#" class="active btn_rate"> 평가 제출하기</a>
+      </div>
+
+      <div id="dimmed">
+        <div class="dimmed">
+          <div class="popup02">
+            <h4>제출하기</h4>
+            <p>평가 제출하시겠습니까?</p>
+            <ul class="btn_popup02_box">
+              <li class="btn btn_cancle">취소</li>
+              <li class="btn active btn_submit">제출하기</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+    <script src="../../js/crew.js"></script>
+  </body>
+</html>

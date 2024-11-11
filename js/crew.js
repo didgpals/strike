@@ -15,10 +15,25 @@ $(function () {
   $(".tab_tag_swiper li").on("click", function () {
     $(this).addClass("active").siblings().removeClass("active");
     let index = $(this).index();
-    $(".crew-group-wrap .content > section ")
+    $(
+      ".crew-group-wrap .content > section, .crew-before-join-wrap .content > section "
+    )
       .eq(index)
       .show()
       .siblings(".crew-group-wrap  .content > section")
       .hide();
+  });
+  $(".crew_rm_rate ul li").on("click", function () {
+    $(this).toggleClass("active").siblings().removeClass("active");
+  });
+  $(".btn_rate").on("click", function (e) {
+    e.preventDefault();
+    $("#dimmed").fadeIn();
+  });
+  $(".btn_cancle").on("click", function () {
+    $("#dimmed").fadeOut();
+  });
+  $(".btn_submit").on("click", function () {
+    location.href = "crew-complete.html";
   });
 });

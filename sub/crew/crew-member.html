@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STRIKE - 챌린지 정보</title>
+    <!-- FONT -->
+    <link rel="stylesheet" href="../../css/font.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/style2.css" />
+  </head>
+
+  <body>
+    <div id="wrap" class="crew_member">
+      <header id="header" class="topbar topbar_sub">
+        <a href="my.html" class="btn_back">뒤로가기</a>
+        <h1>수영구 러닝크루</h1>
+        <div class="util">
+          <a href="#" class="btn_like">좋아요</a>
+          <a href="#" class="btn_more">더보기</a>
+        </div>
+        <!--//util-->
+      </header>
+      <!--//topbar_main-->
+      <section class="swiper tab_tag_swiper">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide tab_tag">
+            <a
+              href="crew-complete.html"
+              onclick="location.href='crew-complete.html'"
+              >홈</a
+            >
+          </li>
+          <li
+            class="swiper-slide tab_tag"
+            onclick="location.href='crew-rm-complete.html'"
+          >
+            <a href="crew-rm-complete.html">정기모임</a>
+          </li>
+          <li
+            class="swiper-slide tab_tag"
+            onclick="location.href='crew-chat.html'"
+          >
+            <a href="#">채팅</a>
+          </li>
+          <li
+            class="swiper-slide tab_tag"
+            onclick="location.href='crew-gallery.html'"
+          >
+            <a href="#">사진첩</a>
+          </li>
+          <li
+            class="swiper-slide tab_tag active"
+            onclick="location.href='crew-member.html'"
+          >
+            <a href="#">크루인원</a>
+          </li>
+        </ul>
+      </section>
+      <section id="crew_member">
+        <a class="kakao_share" href="#">
+          <h1>
+            <img src="../../img/sub/crew/kakao.png" alt="카카오 링크" />
+          </h1>
+          <p>카카오톡으로 크루 공유하기</p>
+        </a>
+
+        <div class="crew_info">
+          <h2>크루 멤버 (5)</h2>
+          <p>관리</p>
+        </div>
+
+        <div class="crew_num_list_wrap">
+          <ul class="crew_num_list">
+            <li>
+              <img src="../../img/crew/boss.png" class="icon_boss" alt="boss" />
+              <img src="../../img/sub/crew/member01.png" alt="멤버1" />
+              <ul class="crew_num_list_txt">
+                <li>
+                  리라라
+                  <p>수영구 러닝 크루장입니다. 반가워요~</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <img src="../../img/sub/crew/member02.png" alt="멤버2" />
+              <ul class="crew_num_list_txt">
+                <li>
+                  엠마
+                  <p>저녁에 같이 뛰실분 모아요~</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <img src="../../img/sub/crew/member03.png" alt="멤버3" />
+              <ul class="crew_num_list_txt">
+                <li>
+                  완다
+                  <p>안녕하세요. 같이 열심히 뛰어요!</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <img src="../../img/sub/crew/member04.png" alt="멤버4" />
+              <ul class="crew_num_list_txt">
+                <li>
+                  오리
+                  <p>나는 오리 꽥꽥 신나게 러닝!</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <img src="../../img/sub/crew/member05.png" alt="멤버5" />
+              <ul class="crew_num_list_txt">
+                <li>
+                  병아리
+                  <p>나는 병아리 삐약삐약 힘차게 러닝!</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <ul id="nav_bar">
+      <li class="active">
+        <a href="challenge.html">챌린지</a>
+      </li>
+      <li><a href="../routine/routine.html">루틴</a></li>
+      <li><a href="#">메인홈</a></li>
+      <li><a href="#">크루</a></li>
+      <li><a href="#">마이페이지</a></li>
+    </ul>
+    <!--//nav_bar-->
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../../js/crew.js"></script>
+    <script>
+      let crewGroupTag = new Swiper(".tab_tag_swiper", {
+        slidesPerView: "auto",
+        spaceBetween: 13,
+        slidesOffsetBefore: 16,
+      });
+    </script>
+  </body>
+</html>

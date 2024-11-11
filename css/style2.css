@@ -924,6 +924,8 @@ section h4 {
 }
 .crew-on-crew-list .d-date {
   color: var(--run-main-red);
+  padding: 2px 4px;
+  font-size: 1.4rem;
 }
 .tag_box {
   display: flex;
@@ -945,7 +947,7 @@ section h4 {
 .look-around-crew .crew-on-crew-list > li {
   padding-bottom: 10px;
 }
-.crew-add {
+#fab {
   display: block;
   position: fixed;
   bottom: 120px;
@@ -1024,7 +1026,7 @@ section h4 {
   font-weight: 600;
 }
 .crew-group-wrap .content {
-  padding-bottom: 60px;
+  padding-bottom: 70px;
 }
 .crew-group-wrap .content section:not(:first-child) {
   display: none;
@@ -1041,13 +1043,14 @@ section h4 {
 .swiper-slide {
   width: auto;
 }
-.crew-group section h5 {
+.content section > h5 {
   margin-bottom: 12px;
   font-size: 1.4rem;
   font-weight: 500;
   color: var(--run-main-darkgray);
+  margin-bottom: 20px;
 }
-.crew_group_home p {
+.content section > p {
   font-size: 1.6rem;
   font-weight: 400;
   margin-bottom: 20px;
@@ -1078,7 +1081,465 @@ section h4 {
 #main.crew_regular_meeting_main {
   padding-bottom: 140px;
 }
-.regular-meeting-alarm {
+#main.crew_regular_meeting_main .location {
+  background: none;
+}
+#main.crew_regular_meeting_main fieldset:last-child {
+  display: flex;
+  justify-content: space-between;
+}
+#main.crew_regular_meeting_main fieldset:last-child label {
   font-size: 1.6rem;
   font-weight: 600;
+}
+
+#main.crew_regular_meeting_main input[type="checkbox"] {
+  appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  margin-top: 4px;
+  border-radius: 50%;
+  background: url(../img/sub/check_disable.svg) no-repeat center;
+}
+#main.crew_regular_meeting_main input[type="checkbox"]:checked {
+  background: url(../img/sub/check_active.svg) no-repeat center;
+}
+
+.crew-group-rm .content section:nth-child(1) {
+  display: none;
+}
+.crew-group-rm .content section:nth-child(2) {
+  display: block;
+}
+.crew_regular_meeting .crew-on-crew-list li {
+  margin-bottom: 20px;
+}
+.content .crew_regular_meeting {
+  padding-bottom: 60px;
+}
+.crew_rm_detail {
+  margin-top: 70px;
+  height: 205px;
+  background: url(../img/sub/bg_crew_rm.jpg) no-repeat top 0 center;
+}
+.crew_rm_detail_txt {
+  margin-top: 150px;
+  padding-bottom: 180px;
+}
+.crew_rm_detail_txt li {
+  margin-bottom: 20px;
+}
+.crew_rm_detail_txt li h5 {
+  color: var(--run-main-gray);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.crew_rm_detail_txt li p {
+  font-weight: 1.6rem;
+}
+.crew_rm_detail .btn_area {
+  bottom: 102px;
+  padding-bottom: 20px;
+}
+.crew_rm_rate label {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.crew_rm_rate fieldset:nth-of-type(1) ul {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 10px;
+}
+.crew_rm_rate form > p {
+  font-size: 1.2rem;
+  color: var(--run-main-gray);
+  text-align: left;
+  margin-bottom: 20px;
+}
+.crew_rm_rate .join-form {
+  margin-top: 20px;
+}
+.crew_rm_rate p {
+  font-size: 1.6rem;
+  text-align: center;
+}
+.rate_bad::before {
+  content: "";
+  display: block;
+  width: 69px;
+  height: 40px;
+  margin-bottom: 8px;
+  background: url(../img/sub/rate_bad.svg) no-repeat center;
+}
+.rate_bad.active::before {
+  background-image: url(../img/sub/rate_bad_active.svg);
+}
+.rate_good::before {
+  content: "";
+  display: block;
+  width: 69px;
+  height: 40px;
+  margin-bottom: 8px;
+  background: url(../img/sub/rate_good.svg) no-repeat center;
+}
+.rate_good.active::before {
+  background-image: url(../img/sub/rate_good_active.svg);
+}
+.rate_best::before {
+  content: "";
+  display: block;
+  width: 69px;
+  height: 40px;
+  margin-bottom: 8px;
+  background: url(../img/sub/rate_best.svg) no-repeat center;
+}
+
+.rate_best.active::before {
+  background-image: url(../img/sub/rate_best_active.svg);
+}
+.crew_rate_check {
+  margin-top: 20px;
+}
+.crew_rate_check ul {
+  margin-top: 10px;
+}
+.crew_rate_check ul li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.crew_rate_check input[type="checkbox"] {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: url(../img/sub/icon_check_rate.svg) no-repeat center;
+}
+.crew_rate_check input[type="checkbox"]:checked {
+  background: url(../img/sub/icon_check_rate_checked.svg) no-repeat center;
+}
+.crew-chat-wrap #main.crew-chat {
+  padding: 70px 0 60px;
+}
+.crew-chat-wrap .tab_tag_swiper {
+  margin-top: 0;
+  padding: 20px 0;
+}
+/* 전체 화면 스타일 */
+
+/* 채팅창 컨테이너 */
+.chat-container {
+  min-width: 357px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* 채팅 내용 영역 */
+.chat-messages {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap; /* nowrap으로 설정 */
+  padding: 20px 56px;
+  overflow-y: auto;
+  max-height: 500px;
+}
+.chat-messages::-webkit-scrollbar {
+  display: none;
+}
+/* 개별 메시지 */
+.message {
+  max-width: 70%;
+  padding: 12px 18px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  display: inline-block;
+  word-wrap: break-word;
+  position: relative;
+}
+
+/* 사용자 메시지 스타일 (왼쪽 배치) */
+.message.user {
+  background-color: var(--run-main-green);
+  color: white;
+  align-self: flex-start; /* 왼쪽 정렬 */
+  text-align: left;
+  border-bottom-left-radius: 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center; /* 내용과 이미지 세로 정렬 */
+}
+
+/* 사용자 메시지 왼쪽 이미지 */
+.message.user::before {
+  content: "";
+  position: absolute;
+  left: -40px; /* 이미지 위치 */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: url("../img/sub/chat_profile02.png") no-repeat center; /* 이미지 URL */
+}
+.message.user::after {
+  content: "무함마드";
+  display: block;
+  position: absolute;
+  left: -43px;
+  top: 70%;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
+}
+/* 봇 메시지 스타일 */
+.message.bot {
+  background-color: #f0f0f0;
+  color: #333;
+  align-self: flex-end; /* 오른쪽 정렬 */
+  border-bottom-right-radius: 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center; /* 내용과 이미지 세로 정렬 */
+}
+
+/* 봇 메시지 오른쪽 이미지 */
+.message.bot::after {
+  content: "";
+  position: absolute;
+  right: -40px; /* 이미지 위치 */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: url("../img/sub/chat_profile01.png") no-repeat center;
+}
+
+/* 입력 영역 */
+.chat-input {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 32px;
+  width: 100%;
+  max-width: 375px;
+  padding: 10px 16px;
+  background-color: #fff;
+}
+.chat-input input::placeholder {
+  color: var(--run-main-gray);
+}
+/* 플러스 버튼 */
+.chat-input .plus-btn {
+  position: relative;
+  background-color: var(--run-main-green);
+  color: var(--run-main-yellow);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 2.8rem;
+  flex-shrink: 0;
+}
+
+.chat-input input {
+  flex-grow: 1;
+  height: 45px;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  outline: none;
+  font-size: 14px;
+}
+
+.chat-input button {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  width: 73px;
+  height: 45px;
+  margin-left: 10px;
+  padding: 10px 15px;
+  border: none;
+  background-color: var(--run-main-green);
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background-color: #0056b3;
+}
+/* 드롭다운 */
+.gallery-container {
+  position: relative;
+  width: 375px;
+  margin: 0 auto;
+}
+
+.gallery-controls {
+  float: right;
+  top: 0;
+  right: 0;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#sort-order {
+  padding: 0 0 0 20px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  appearance: none;
+  background: url(../img/crew/icon-arrow-down.svg) no-repeat left center / 12px;
+}
+
+/* gallery 영역 */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  width: 375px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.crew_member .tab_tag_swiper {
+  margin-top: 70px;
+  padding-top: 20px;
+}
+.kakao_share {
+  display: flex;
+  gap: 16px;
+  padding: 20px 16px;
+  align-items: center;
+}
+
+.kakao_share p {
+  font-weight: 500;
+}
+
+.crew_tab {
+  padding: 0 16px 20px;
+}
+
+.crew_tab ol {
+  display: flex;
+  gap: 10px;
+  width: 343px;
+  /* 고정된 너비 */
+  overflow-x: scroll;
+  /* 내용이 넘칠 때만 가로 스크롤 표시 */
+  white-space: nowrap;
+  scrollbar-width: none;
+}
+
+.crew_tab ol li {
+  padding: 4px 16px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--run-main-gray);
+  border: 1px solid var(--run-main-gray);
+  border-radius: 20px;
+}
+
+.crew_tab ol .crew_tab_on {
+  color: #fff;
+  background: var(--run-main-green);
+}
+
+.crew_info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px 20px;
+}
+
+.crew_info h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.crew_info p {
+  font-size: 1.2rem;
+  color: var(--run-main-gray);
+}
+
+.crew_num_list_wrap {
+  padding: 0 16px;
+}
+
+.crew_num_list > li {
+  display: flex;
+  gap: 18px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.crew_num_list > li img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#wrap .icon_boss {
+  position: absolute;
+  top: -2px;
+  left: 26px;
+  width: 20px;
+  height: 20px;
+}
+
+.crew_num_list_txt li {
+  font-weight: 500;
+}
+
+.crew_num_list_txt li p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--run-main-darkgray);
+}
+
+.crew-before-join-wrap {
+  background: url(../img/sub/bg_crew_group02.jpg) no-repeat top 0 center;
+}
+.crew-before-join-wrap #header {
+  box-shadow: none;
+  background: linear-gradient(#fff, transparent);
+}
+
+.crew-before-join-wrap #main {
+  padding-bottom: 100px;
+}
+.crew-before-join-wrap .content section:nth-child(2) {
+  display: none;
+}
+
+.crew-before-join-wrap .btn_area {
+  bottom: 102px;
+  padding-bottom: 20px;
 }

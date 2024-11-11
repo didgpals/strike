@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STRIKE</title>
+    <!-- FONT -->
+    <link rel="stylesheet" href="../../css/font.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/style2.css" />
+  </head>
+  <body>
+    <div id="wrap" class="crew-chat-wrap">
+      <header id="header" class="topbar topbar_sub">
+        <a href="crew-main.html" class="btn_back"></a>
+        <h1>수영구 러닝 크루</h1>
+        <div class="util">
+          <a href="#" class="btn_like active">좋아요</a>
+          <a href="#" class="btn_more">더보기</a>
+        </div>
+        <!--//util-->
+      </header>
+      <main id="main" class="crew-chat">
+        <section class="swiper tab_tag_swiper">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide tab_tag">
+              <a
+                href="crew-complete.html"
+                onclick="location.href='crew-complete.html'"
+                >홈</a
+              >
+            </li>
+            <li
+              class="swiper-slide tab_tag"
+              onclick="location.href='crew-rm-complete.html'"
+            >
+              <a href="crew-rm-complete.html">정기모임</a>
+            </li>
+            <li
+              class="swiper-slide tab_tag active"
+              onclick="location.href='crew-chat.html'"
+            >
+              <a href="#">채팅</a>
+            </li>
+            <li
+              class="swiper-slide tab_tag"
+              onclick="location.href='crew-gallery.html'"
+            >
+              <a href="#">사진첩</a>
+            </li>
+            <li
+              class="swiper-slide tab_tag"
+              onclick="location.href='crew-member.html'"
+            >
+              <a href="#">크루인원</a>
+            </li>
+          </ul>
+        </section>
+        <div class="chat-container">
+          <div class="chat-messages">
+            <div class="message bot">안녕! 러닝 시작했다고 들었는데, 어때?</div>
+            <div class="message user">
+              안녕! 처음에는 힘들었는데, 점점 적응되는 것 같아.
+            </div>
+            <div class="message bot">
+              잘 하고 있네! 요즘 얼마나 달리고 있어?
+            </div>
+            <div class="message user">
+              아직 3km 정도밖에 못 뛰지만, 점점 늘릴 생각이야.
+            </div>
+            <div class="message bot">
+              3km도 꽤 대단한데? 나는 아직 2km만 뛰어도 헉헉거려.
+            </div>
+            <div class="message user">
+              나도 그랬어. 조금씩 늘리다 보면 3km도 금방 될 거야.
+            </div>
+            <div class="message bot">
+              날씨에 따라 컨디션이 달라지더라. 비 오거나 너무 더울 때는 특히
+              힘들어.
+            </div>
+            <div class="message user">
+              맞아, 나도 더울 때는 너무 지치더라. 그래서 시간대를 바꿔봤어?
+            </div>
+            <div class="message bot">
+              응, 요즘은 아침 일찍 뛰어. 공기도 맑고 시원해서 좋아.
+            </div>
+          </div>
+          <div class="chat-input">
+            <div class="plus-btn">+</div>
+            <input type="text" placeholder="메시지 입력" />
+            <button>전송</button>
+          </div>
+        </div>
+      </main>
+      <!--//nav_bar-->
+    </div>
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../../js/crew.js"></script>
+    <script>
+      let crewGroupTag = new Swiper(".tab_tag_swiper", {
+        slidesPerView: "auto",
+        spaceBetween: 13,
+        slidesOffsetBefore: 16,
+      });
+    </script>
+  </body>
+</html>

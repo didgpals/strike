@@ -19,7 +19,7 @@
   <body>
     <div id="wrap" class="crew-group-wrap">
       <header id="header" class="topbar topbar_sub">
-        <a href="crew-main.html" class="btn_back"></a>
+        <a href="#" class="btn_back"></a>
         <h1></h1>
         <div class="util">
           <a href="#" class="btn_like active">좋아요</a>
@@ -27,7 +27,7 @@
         </div>
         <!--//util-->
       </header>
-      <main id="main" class="crew-group">
+      <main id="main" class="crew-group-rm">
         <section class="crew-group-title">
           <div class="crew-group-title-txt">
             <p>NEW</p>
@@ -47,32 +47,15 @@
         </section>
         <section class="swiper tab_tag_swiper">
           <ul class="swiper-wrapper">
-            <li class="swiper-slide tab_tag active">
-              <a href="crew-complete.html" onclick="javascript:void(0)">홈</a>
-            </li>
             <li class="swiper-slide tab_tag">
-              <a href="crew-rm-complete.html" onclick="javascript:void(0)"
-                >정기모임</a
-              >
+              <a href="#" onclick="javascript:void(0)">홈</a>
             </li>
-            <li
-              class="swiper-slide tab_tag"
-              onclick="location.href='crew-chat.html'"
-            >
-              <a href="#">채팅</a>
+            <li class="swiper-slide tab_tag active">
+              <a href="#" onclick="javascript:void(0)">정기모임</a>
             </li>
-            <li
-              class="swiper-slide tab_tag"
-              onclick="location.href='crew-gallery.html'"
-            >
-              <a href="#">사진첩</a>
-            </li>
-            <li
-              class="swiper-slide tab_tag"
-              onclick="location.href='crew-member.html'"
-            >
-              <a href="#">크루인원</a>
-            </li>
+            <li class="swiper-slide tab_tag"><a href="#">채팅</a></li>
+            <li class="swiper-slide tab_tag"><a href="#">사진첩</a></li>
+            <li class="swiper-slide tab_tag"><a href="#">크루인원</a></li>
           </ul>
         </section>
         <div class="content">
@@ -112,7 +95,30 @@
           </section>
           <section class="crew_regular_meeting">
             <h5>정기모임</h5>
-            <p>진행중인 정기모임이 없습니다.</p>
+            <ul class="crew-on-crew-list">
+              <li>
+                <a href="#">
+                  <img src="../../img/sub/crew-on01.jpg" alt="crew-on-img" />
+                  <div class="crew-on-txt">
+                    <h5>평일 정기 모임</h5>
+                    <p>수영구 &middot; 11.05(화) &middot; 18:00</p>
+                    <span>정모 인원 2/12</span>
+                  </div>
+                  <div class="d-date">D-5</div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../../img/sub/crew-on01.jpg" alt="crew-on-img" />
+                  <div class="crew-on-txt">
+                    <h5>주말 정기모임</h5>
+                    <p>수영구 &middot; 11.09(토) &middot; 18:00</p>
+                    <span>정모 인원 2/12</span>
+                  </div>
+                  <div class="d-date">D-9</div>
+                </a>
+              </li>
+            </ul>
             <div class="btn_area">
               <a href="crew-regular-meeting-make.html" class="active">
                 정모 만들기</a
@@ -124,7 +130,7 @@
       <ul id="nav_bar">
         <li><a href="challenge.html">챌린지</a></li>
         <li><a href="../routine/routine.html">루틴</a></li>
-        <li><a href="../main/main.html">메인홈</a></li>
+        <li><a href="main.html">메인홈</a></li>
         <li class="active"><a href="../crew/crew-main.html">크루</a></li>
         <li><a href="#">마이페이지</a></li>
       </ul>
