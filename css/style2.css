@@ -1533,9 +1533,9 @@ section h4 {
 }
 
 .crew-before-join-wrap #main {
-  padding-bottom: 100px;
+  padding-bottom: 180px;
 }
-.crew-before-join-wrap .content section:nth-child(2) {
+.crew-before-join-wrap .content section:nth-of-type(2) {
   display: none;
 }
 
