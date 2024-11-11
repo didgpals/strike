@@ -16,36 +16,42 @@
     <div id="wrap">
       <header id="header" class="topbar topbar_sub">
         <a href="crew-make.html" class="btn_back">뒤로가기</a>
-        <h1>크루개설</h1>
+        <h1>정기모임 만들기</h1>
         <div class="util">
           <a href="#"></a>
         </div>
         <!--//util-->
       </header>
-      <main id="main" class="crew_make02">
+      <main id="main" class="crew_regular_meeting_main">
         <form class="join-form">
           <fieldset>
-            <legend>지역 설정</legend>
-            <input
-              type="text"
-              placeholder="크루를 진행할 동네를 설정해주세요."
-              class="location"
-            />
+            <input type="file" id="input-file" />
+            <label for="input-file">이미지 첨부</label>
+            <p>이미지 첨부</p>
           </fieldset>
           <fieldset>
-            <legend>크루 이름</legend>
-            <input type="text" placeholder="모임 이름을 정해주세요." />
+            <legend>정모 이름</legend>
+            <input type="text" placeholder="정기 모임 이름을 적어주세요." />
           </fieldset>
           <fieldset>
-            <legend>크루 소개</legend>
-            <textarea
-              class="info"
-              placeholder="모임 소개글을 적어주세요."
-            ></textarea>
+            <legend>날짜</legend>
+            <input type="text" placeholder="날짜선택" />
+          </fieldset>
+          <fieldset>
+            <legend>시간</legend>
+            <textarea class="info" placeholder="시간선택"></textarea>
+          </fieldset>
+          <fieldset>
+            <legend>위치</legend>
+            <input type="text" placeholder="위치선택" />
           </fieldset>
           <fieldset>
             <legend>정원</legend>
-            <input type="text" placeholder="이메일을 입력해주세요." />
+            <input type="text" placeholder="정원설정" />
+          </fieldset>
+          <fieldset>
+            <label for="regular-meeting-alarm"></label>
+            <input type="checkbox" id="regular-meeting-alram" />
           </fieldset>
         </form>
       </main>
