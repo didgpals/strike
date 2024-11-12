@@ -360,3 +360,6 @@ body {
   border-color: var(--run-main-green);
   color: var(--run-main-white);
 }
+button {
+  font-size: 1.6rem;
+}

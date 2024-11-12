@@ -433,6 +433,10 @@ table input[type="checkbox"]:checked {
 .main-running {
   padding: 0 16px;
 }
+.main-running .btn_area {
+  position: relative;
+  padding-bottom: 20px;
+}
 .main-running .percent {
   position: relative;
   text-align: center;
