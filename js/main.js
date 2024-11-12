@@ -178,4 +178,11 @@ $(function () {
   // 초기 화면 로드 시 현재 월과 달력 표시
   updateMonthDisplay();
   updateCalendarDays();
+  $(".alarm_dimmed").click(function () {
+    $("#dimmed").show();
+  });
+
+  $(".btn_popup02_box li").click(function () {
+    $("#dimmed").hide();
+  });
 });
