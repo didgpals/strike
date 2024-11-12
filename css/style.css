@@ -398,8 +398,11 @@
 }
 
 /*#now*/
+#now {
+  padding-bottom: 0;
+}
 #now .swiper {
-  padding: 20px 16px 0;
+  padding: 20px 16px 20px;
 }
 #now .swiper > div {
   height: 310px;
