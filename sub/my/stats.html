@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STRIKE - 챌린지 정보</title>
+    <!-- FONT -->
+    <link rel="stylesheet" href="../../css/font.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/style03.css" />
+
+    <!-- JS -->
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../../js/main.js"></script>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <header id="header" class="topbar topbar_sub">
+        <a href="my.html" class="btn_back">뒤로가기</a>
+        <h1>목표 달성 현황</h1>
+        <div class="util">
+          <a href="#" class="btn_bell">알림</a>
+        </div>
+        <!--//util-->
+      </header>
+      <!--//topbar_main-->
+
+      <main id="main">
+        <!--상단 그래프 시작-->
+        <div class="stats_top">
+          <div class="stats_left">
+            <ul>
+              <li>10월 달성률</li>
+              <li>
+                <img
+                  src="../../img/sub/my/stats_graph.png"
+                  alt="그래프이미지"
+                />
+              </li>
+              <li>103.45<span>/150km</span></li>
+              <li>69% 달성</li>
+            </ul>
+          </div>
+          <div class="stats_right">
+            <ul>
+              <li>8h 4m<span>누적시간</span></li>
+              <li>5’33"<span>평균페이스</span></li>
+              <li>3,696<span>소모칼로리</span></li>
+            </ul>
+          </div>
+        </div>
+        <!--//stats_top-->
+
+        <div class="stats_calendar">
+          <div class="sub_section section_monthly">
+            <div class="calendar-container">
+              <div class="month-nav">
+                <span class="arrow" id="prevMonth">&lt;</span>
+                <span class="current-month" id="currentMonth"></span>
+                <span class="arrow" id="nextMonth">&gt;</span>
+              </div>
+
+              <div class="calendar" id="calendarDays">
+                <div class="day-name">Sun</div>
+                <div class="day-name">Mon</div>
+                <div class="day-name">Tue</div>
+                <div class="day-name">Wed</div>
+                <div class="day-name">Thu</div>
+                <div class="day-name">Fri</div>
+                <div class="day-name">Sat</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--//stats_calendar-->
+
+        <!--배찌 시작-->
+        <div class="badge">
+          <h3>11월 배찌 현황</h3>
+          <ul class="badge_wrap">
+            <li class="badge_list01">
+              <ul>
+                <li>
+                  <img src="../../img/sub/my/badge01.svg" alt="배찌1" />
+                  <p>5km 달성</p>
+                </li>
+                <li>
+                  <img src="../../img/sub/my/badge02.svg" alt="배찌2" />
+                  <p>10km 달성</p>
+                </li>
+                <li>
+                  <img src="../../img/sub/my/badge03.svg" alt="배찌3" />
+                  <p>15km 달성</p>
+                </li>
+              </ul>
+            </li>
+            <li class="badge_list02">
+              <ul>
+                <li>
+                  <img src="../../img/sub/my/badge04.svg" alt="배찌4" />
+                  <p>밤러너</p>
+                </li>
+                <li>
+                  <img src="../../img/sub/my/badge05.svg" alt="배찌5" />
+                  <p>만기달성</p>
+                </li>
+                <li>
+                  <img src="../../img/sub/my/badge06.svg" alt="배찌6" />
+                  <p>스트라이커</p>
+                </li>
+              </ul>
+            </li>
+            <li class="badge_list03">
+              <ul>
+                <li>
+                  <img src="../../img/sub/my/badge07.svg" alt="배찌7" />
+                  <p>나는 비행기</p>
+                </li>
+                <li>
+                  <img src="../../img/sub/my/badge08.svg" alt="배찌8" />
+                  <p>누가 길치야</p>
+                </li>
+                <li>
+                  <img src="../../img/sub/my/badge09.svg" alt="배찌9" />
+                  <p>도장 컬렉터</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!--//badge-->
+      </main>
+
+      <!-- 하단 내비게이션바-->
+
+      <ul id="nav_bar">
+        <li><a href="../challenge/challenge.html">챌린지</a></li>
+        <li><a href="../routine/routine.html">루틴</a></li>
+        <li><a href="../main/main.html">메인홈</a></li>
+        <li><a href="../crew/crew-main.html">크루</a></li>
+        <li class="active"><a href="#">마이페이지</a></li>
+      </ul>
+      <!--//nav_bar-->
+    </div>
+    <!--//wrap-->
+  </body>
+</html>

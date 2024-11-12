@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STRIKE</title>
+    <!-- FONT -->
+    <link rel="stylesheet" href="../../css/font.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/style2.css" />
+  </head>
+  <body>
+    <div id="wrap" class="running">
+      <header id="header" class="topbar topbar_sub">
+        <a href="routine_after_set.html" class="btn_back">뒤로가기</a>
+        <h1></h1>
+        <div class="util">
+          <a href="#"></a>
+        </div>
+        <!--//util-->
+      </header>
+      <!--//topbar_main-->
+      <main id="main">
+        <div class="current-location">
+          <div class="current-location-point-dot"></div>
+          <div class="current-location-point"></div>
+        </div>
+        <div class="gradient-bg">
+          <h2>12.87km</h2>
+          <ul class="count">
+            <li>
+              <p>44m</p>
+              <span>시간</span>
+            </li>
+            <li>
+              <p>5'33"</p>
+              <span>페이스</span>
+            </li>
+            <li>
+              <p>163</p>
+              <span>심박수</span>
+            </li>
+          </ul>
+          <div class="running-btn-box">
+            <div class="btn-shadow">목표 설정</div>
+            <div class="btn-play">시작</div>
+            <div class="btn-shadow btn-play-music">음악 연동</div>
+          </div>
+        </div>
+      </main>
+      <!--루틴 설정 팝업창-->
+      <div id="dimmed">
+        <div class="dimmed">
+          <div class="popup01 set music">
+            <button class="btn_close">닫기</button>
+            <p>러닝 시작하기</p>
+            <ul>
+              <li>
+                <a href="https://music.apple.com/kr/new" target="_blank">
+                  애플뮤직</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://open.spotify.com/#_gl=1*1sj3dgb*_gcl_au*NjgxODY2NjYuMTczMDk2MDc1Mg.."
+                  target="_blank"
+                  >스포티파이</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+    <script src="../../js/map.js"></script>
+  </body>
+</html>

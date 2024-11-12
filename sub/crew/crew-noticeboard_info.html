@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STRIKE - 게시판</title>
+  <!-- FONT -->
+  <link rel="stylesheet" href="../../css/font.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../css/style2.css">
+
+  <!-- CSS 수정바람 -->
+  <link rel="stylesheet" href="noticeboard.css">
+
+  <!-- JS -->
+  <script src="../../js/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- JS 수정바람 -->
+  <script src="noticeboard.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+
+    <header id="header" class="topbar topbar_sub">
+      <a href="crew-noticeboard.html" class="btn_back">뒤로가기</a>
+      <h1>루틴 상세</h1>
+      <div class="util">
+        <a href="#" class="btn_share">공유하기</a>
+      </div><!--//util-->
+    </header><!--//topbar_main-->
+
+    <main id="main">
+
+      <section id="info" class="section">
+        <div class="inner">
+
+          <div class="top">
+            <div class="tag_line">러닝화 추천</div>
+            <h2>초보부터 전문가까지! 러닝화 아이템 추천</h2>
+            <div class="profile">
+              <div class="right">
+                <div class="user_img user01"></div>
+                <p>러닝맨<span>2달전</span></p>
+              </div><!--//right-->
+              <div class="left">
+                <button>팔로우</button>
+                <div class="btn_etc"></div>
+              </div><!--//left-->
+            </div><!--//profile-->
+          </div><!--//top-->
+
+          <div class="line"></div>
+
+          <ul class="info_list">
+            <li>
+              <h3>1. 왜 러닝화가 중요할까?</h3>
+              <p><span>러닝화의 역할:</span> 발의 피로 감소, 부상 예방, 달리기 효율 증대 등 러닝화가 러닝에 미치는 영향을 간략하게 설명</p>
+              <p><span>다양한 러닝화 종류 소개:</span> 쿠셔닝, 안정성, 반응성 등 러닝화의 주요 특징과 종류를 간략하게 설명</p>
+            </li>
+            <li>
+              <h3>2. 초보 러너를 위한 러닝화 추천</h3>
+              <p><span>쿠셔닝이 좋은 러닝화:</span> 충격 흡수가 뛰어나 발의 피로를 줄여주는 쿠셔닝 중심의 러닝화 소개 (예: 아식스 젤 카야노, 뉴발란스 880)</p>
+            </li>
+            <li class="img_box img01"></li>
+            <li>
+              <p><span>안정성이 좋은 러닝화:</span> 발의 움직임을 안정적으로 잡아주어 발목 부상을 예방하는 안정성 중심의 러닝화 소개 (예: 브룩스 고스트, 사카이 카자노)</p>
+            </li>
+            <li class="img_box img02"></li>
+            <li>
+              <h3>3. 중급 러너를 위한 러닝화 추천</h3>
+              <p><span>반응성이 좋은 러닝화:</span> 빠른 속도를 위한 추진력을 제공하는 반응성 중심의 러닝화 소개 (예: 나이키 줌X 베이퍼플라이, 호카 오네오네 본디)</p>
+            </li>
+            <li class="img_box img03"></li>
+            <li>
+              <p><span>트레일 러닝화:</span> 야외에서 달리는 러너들을 위한 접지력이 뛰어난 트레일 러닝화 소개 (예: 살로몬, HOKA SPEEDGOAT)</p>
+            </li>
+            <li class="img_box img04"></li>
+            <h3>4. 전문 러너를 위한 러닝화 추천</h3>
+            <p><span>경량화된 러닝화:</span> 최고의 속도를 위한 경량화된 러닝화 소개 (예: 아디다스 아디제로 아디오스 프로, 뉴발란스 퓨론)</p>
+            </li>
+            <li class="img_box img05"></li>
+            <li>
+              <p><span>맞춤형 러닝화:</span> 개인의 발 모양과 러닝 자세에 맞춰 제작되는 맞춤형 러닝화 소개</p>
+            </li>
+          </ul><!--//info_list-->
+
+        </div><!--//inner-->
+      </section><!--//info-->
+
+      <section id="reply" class="section">
+        <div class="inner">
+
+          <ul class="view">
+            <li><img src="../../img/common/icon_heart_stroke_green.svg" alt="좋아요">
+              <p>좋아요</p>
+            </li>
+            <li>조회수<span>2,901</span></li>
+          </ul>
+
+          <ul class="like">
+            <li>댓글<span>0</span></li>
+            <li class="btn_list">
+              <button class="active">등록순</button>
+              <button>최신순</button>
+            </li>
+          </ul>
+
+          <ul class="reply">
+            <li>
+              <b>첫 댓글을 작성해주세요.</b>
+            </li>
+          </ul>
+
+        </div><!--//inner-->
+      </section><!--//reply-->
+
+      <div id="hot" class="page01">
+        <div class="inner">
+          <b>인기글</b>
+          <div class="line"></div>
+          <div class="card_list">
+
+            <a href="#" class="hot01 txt">
+              <ul>
+                <li class="txt_box">
+                  <span>초보 탈출</span>
+                  <h5>러닝 초보 뭐 개선해야될까요?</h5>
+                  <p>러닝 이틀차입니다. 러닝하다가 심박 영역 5단계 되면 영역2로 떨어질 때까지 걷다가 다시 뜁니다. 케이던스 올릴려고 보폭 줄이고 180bpm 메트로늄 들으면서 달렸으나
+                  </p>
+                </li>
+              </ul>
+              <ol>
+                <li>초보러너 · 1주전 · 조회 6,300</li>
+                <li>
+                  <ul>
+                    <li><img src="../../img/common/icon_heart_stroke_green.svg" alt="좋아요">128</li>
+                    <li><img src="../../img/common/icon_chat_green.svg" alt="댓글">12</li>
+                  </ul>
+                </li>
+              </ol>
+            </a><!--//hot01-->
+
+            <div class="line"></div>
+
+            <a href="#" class="hot02 img">
+              <ul>
+                <li class="txt_box">
+                  <span>러닝템 리뷰</span>
+                  <h5>**러닝 초보를 위한 추천 아이템 #1: 가벼운 쿠션 러닝화</h5>
+                  <p>러닝에서 가장 중요한 아이템 중 하나는 러닝화입니다. 초보자라면 가볍고 쿠션이 잘 들어간 러닝화를 선택하는 것이 중요해요.</p>
+                </li>
+                <li class="img_box"></li>
+              </ul>
+              <ol>
+                <li>테일즈런너 · 1달전 · 조회 5,157</li>
+                <li>
+                  <ul>
+                    <li><img src="../../img/common/icon_heart_stroke_green.svg" alt="좋아요">107</li>
+                    <li><img src="../../img/common/icon_chat_green.svg" alt="댓글">1</li>
+                  </ul>
+                </li>
+              </ol>
+            </a><!--//hot02-->
+
+            <div class="line"></div>
+
+            <a href="#" class="hot03 img">
+              <ul>
+                <li class="txt_box">
+                  <span>초보 탈출</span>
+                  <h5>🏃‍♀️ 초보 러너를 위한 첫걸음, 꼭 알아야 할 러닝 팁 2가지 🏃‍♂️</h5>
+                  <p>러닝을 막 시작하려는 분들, 혹은 이제 막 한두 번 시도해보신 분들 계신가요? 저도 처음엔 어디서부터 어떻게 시작해야 할지 막막했는데요.</p>
+                </li>
+                <li class="img_box"></li>
+              </ul>
+              <ol>
+                <li>초보타파 · 2주전 · 조회 3,824</li>
+                <li>
+                  <ul>
+                    <li><img src="../../img/common/icon_heart_stroke_green.svg" alt="좋아요">1</li>
+                    <li><img src="../../img/common/icon_chat_green.svg" alt="댓글">35</li>
+                  </ul>
+                </li>
+              </ol>
+            </a><!--//hot03-->
+
+            <div class="line"></div>
+
+            <a href="#" class="hot04 img">
+              <ul>
+                <li class="txt_box">
+                  <span>러닝화 추천</span>
+                  <h5>초보부터 전문가까지! 러닝화 아이템 추천</h5>
+                  <p>1. 왜 러닝화가 중요할까? 2. 러닝화의 역할: 발의 피로 감소, 부상 예방, 달리기 효율 증대 등 러닝화가 러닝에 미치는 영향을 간략하게 설명</p>
+                </li>
+                <li class="img_box"></li>
+              </ul>
+              <ol>
+                <li>러닝맨 · 2달전 · 조회 2,901</li>
+                <li>
+                  <ul>
+                    <li><img src="../../img/common/icon_heart_stroke_green.svg" alt="좋아요">80</li>
+                    <li><img src="../../img/common/icon_chat_green.svg" alt="댓글">4</li>
+                  </ul>
+                </li>
+              </ol>
+            </a><!--//hot04-->
+
+            <div class="line"></div>
+
+            <a href="#" class="hot05 img">
+              <ul>
+                <li class="txt_box">
+                  <span>러닝템 리뷰</span>
+                  <h5>👟 초보 러너를 위한 러닝화 고르는 법 - 발에 맞는 신발이 러닝을 즐겁게 만든다! 👟</h5>
+                  <p>러닝을 시작할 때 꼭 필요한 장비, 바로 러닝화죠! 가볍게 동네를 뛰려 해도 발에 맞는 러닝화 하나면 피로감이 덜하고 부상 위험도 줄일 수 있어요.</p>
+                </li>
+                <li class="img_box"></li>
+              </ul>
+              <ol>
+                <li>초보타파 · 3주전 · 조회 2,824</li>
+                <li>
+                  <ul>
+                    <li><img src="../../img/common/icon_heart_stroke_green.svg" alt="좋아요">52</li>
+                    <li><img src="../../img/common/icon_chat_green.svg" alt="댓글">5</li>
+                  </ul>
+                </li>
+              </ol>
+            </a><!--//hot05-->
+
+          </div><!--//card_list-->
+        </div><!--//inner-->
+
+      </div><!--//page01-->
+
+    </main>
+
+    <div class="btn_reply">
+      <div class="img_box"></div>
+      <div class="txt_box">
+        <input type="text" placeholder="댓글을 작성해 주세요.">
+        <button></button>
+      </div>
+    </div>
+
+  </div><!--//wrap-->
+</body>
+
+</html>

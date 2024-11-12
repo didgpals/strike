@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STRIKE - 챌린지 정보</title>
+    <!-- FONT -->
+    <link rel="stylesheet" href="../../css/font.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/style03.css" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <header id="header" class="topbar topbar_sub">
+        <a href="my.html" class="btn_back">뒤로가기</a>
+        <h1>내 통계</h1>
+        <div class="util">
+          <a href="#" class="btn_bell">알림</a>
+        </div>
+        <!--//util-->
+      </header>
+      <!--//topbar_main-->
+
+      <main id="main">
+        <!--일별 그래프 시작-->
+        <div class="tabs">
+          <button class="tab-btn tab_on" id="day-tab">일간통계</button>
+          <button class="tab-btn" id="week-tab">주간통계</button>
+          <button class="tab-btn" id="month-tab">월간통계</button>
+        </div>
+
+        <canvas id="myChart" width="343" height="200"></canvas>
+
+        <!--카드 시작-->
+        <div class="sub_section section_latest">
+          <ol class="latest_list">
+            <li class="latest_card">
+              <h4>
+                토요일 인터벌 러닝
+                <span>2024년 10월 26일 14:28</span>
+              </h4>
+              <i>5set 중 3set를 성공했어요!</i>
+              <ol class="result_list">
+                <li class="txt">10.3</li>
+                <li class="guide_line"></li>
+                <li class="txt">6'59"</li>
+                <li class="guide_line"></li>
+                <li class="txt">384</li>
+              </ol>
+              <a href="#" class="btn_more">+ 자세히보기</a>
+            </li>
+            <!--//latest_card-->
+          </ol>
+        </div>
+
+        <!--페이스 리스트 시작-->
+        <div class="my_graph_list">
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>시간</th>
+                <th>페이스</th>
+                <th>심박수</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>06:01</td>
+                <td>6’01’’/km</td>
+                <td>183BPM</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>05:46</td>
+                <td>6’01’’/km</td>
+                <td>188BPM</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>06:10</td>
+                <td>6’10’’/km</td>
+                <td>190BPM</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>06:22</td>
+                <td>6’22’’/km</td>
+                <td>192BPM</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>09:35</td>
+                <td>9’35’’/km</td>
+                <td>165BPM</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>07:00</td>
+                <td>7’00’’/km</td>
+                <td>180BPM</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>06:35</td>
+                <td>6’35’’/km</td>
+                <td>189BPM</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--//my_graph_list-->
+      </main>
+
+      <ul id="nav_bar">
+        <li><a href="../challenge/challenge.html">챌린지</a></li>
+        <li><a href="../routine/routine.html">루틴</a></li>
+        <li><a href="../main/main.html">메인홈</a></li>
+        <li><a href="../crew/crew-main.html">크루</a></li>
+        <li class="active"><a href="#">마이페이지</a></li>
+      </ul>
+      <!--//nav_bar-->
+    </div>
+    <!--//wrap-->
+
+    <!-- JS -->
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../../js/graph.js"></script>
+  </body>
+</html>
